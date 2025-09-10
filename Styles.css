@@ -1,0 +1,121 @@
+:root{
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: black;
+  --secondary-color:#232738;
+  --primary-color:#3a435d;
+  --accent-color:#0071ff;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-color:#a4a5b3;
+  --primary-color:#3a435d;
+  --accent-color:#0071ff;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-size: 15pt;
+    background: var(--base-color);
+    color: var(--text-color);
+}
+.header{
+  background-color: var(--base-color);
+  padding: 30px 5%;
+}
+h1{
+  margin-top: 40px ;
+  margin-bottom: 20px;
+  
+}
+.premium{
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  height: 40px;
+  width: 45%;
+  
+}
+.info{
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--base-color);
+  height: 40px;
+  width: 45%;
+  margin-left: 10px;
+}
+.section{
+  background-color: var(--base-variant);
+  padding: 50px 10%;
+  color: var(--text-color);
+}
+p{
+  margin-bottom: 20px;
+}
+h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center
+}
+.touch{
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  height: 40px;
+  width: 50%;
+  position: absolute;
+  left: 20%;
+  
+}
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+#themeSwitch{
+  display: flex;
+  background: var(--base-variant);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+#themeSwitch img:first-child{
+  display: none;
+}
+.darkmode #themeSwitch img:last-child{
+  display: none;
+}
+.darkmode #themeSwitch img:first-child{
+  display: block;
+}
+footer{
+  position: relative;
+  background: var(--base-color);
+  padding: 20px 10%;
+}
+.footer-p{
+  text-align: center;
+}
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 3px 2%;
+}
+.footer-copyright{
+  width: 100%;
+  padding: 5px 5%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: var(--base-variant);
+}
